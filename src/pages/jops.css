@@ -1,12 +1,161 @@
-.footer {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    bottom: -100%;
-    left: 50%;
-    width: 100%;
-     height: 100px; 
-     display: flex; 
-     justify-content: center; 
-    align-items: center;
-    z-index: -10;
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px ;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, .3) ;
+  margin: 15px 40px ;
+  width: 80%;
+  height: 600px;
+  position: relative;
+  z-index: 999;
+}
+
+.dev-form{
+  display: flex;
+  justify-content: center;
+}
+
+form {
+ 
+  max-width: 600px;
+  width: 100%;
+  padding:  25px 25px 30px ;
+  border-radius: 8px;
+  margin: 25px;
+  height: 100%;
+  top: 0;
+}
+
+form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1e6a9b;
+}
+
+form .input-box {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.input-box label {
+  color: #1e6a9b;
+  font-size: 13px;
+}
+
+.input-box .field {
+  width: 100%;
+  height: 48px;
+  background: transparent;
+  border: 1px solid #1e6a9b;
+  outline: none;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 13px;
+  color: #1e6a9b;
+  margin-top: 8px;
+}
+
+.input-box .field:focus {
+  border: 3px solid #1e6a9b;
+  background: hsl(204, 68%, 36% , 0.5);
+  color: #fff;
+}
+
+.input-box .field.mess {
+  height: 80px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  height: 55px ;
+  background: #1e6a9b;
+  border-radius: 6px ;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 15px;
+  color: #171717;
+  transition: 0.5s;
+}
+
+form button:hover {
+  background: #093755;
+  color: #fff;
+}
+
+.frist-input-box label {
+  color: #093755;
+}
+
+
+
+.scroll-button {
+  color: #fff;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: none;
+  background: #1e6a9b;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: 1s;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+.scroll-button:hover {
+  transform: translateY(-10px);
+}
+
+.footer-jops {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -320%;
+  left: 50%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+
+@media (max-width:767px) {
+  .contact{
+      position: absolute;
+      width: 90%;
+      height: 100%;
   }
+  form {
+      margin: 0;
+      padding: 10px;
+  }
+  .contact {
+      margin: 15px 10px ;
+  }
+  .input-box .field {
+      width: 98%;
+      height: 33px;
+
+  }
+  .input-box .field.mess {
+      height: 66px;
+      resize: none;
+  }
+  .scroll-button {
+  bottom: 20px;
+  right: 10px;
+  }
+  .footer-jops {
+    bottom: -238%;
+  }
+}

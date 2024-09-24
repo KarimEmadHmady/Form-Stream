@@ -10,7 +10,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Contact />} />
-            <Route path="/Jops" element={<Jops />} /> 
+            <Route path="/Job-Application" element={<Jops />} /> 
           </Routes>
 
     </Router>
