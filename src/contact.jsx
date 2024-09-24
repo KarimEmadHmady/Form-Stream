@@ -36,8 +36,8 @@ const Contact = () => {
         title: "Success!",
         text: "Message Sent Successfully!",
         icon: "success",
-        iconColor: "gold",
-        confirmButtonColor: "gold",
+        iconColor: "blue",
+        confirmButtonColor: "blue",
       });
       event.target.reset();
     }

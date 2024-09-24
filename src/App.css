@@ -23,14 +23,7 @@
   background-color: #555;
 }
 
-@media (max-width: 767px) {
-}
-.container .dev-image {
-  width: 100%;
-  display: grid;
-  place-content: center;
-  
-}
+
 
 .image-footer {
   position: absolute;
